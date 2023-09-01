@@ -11,7 +11,7 @@ export default function Portfolio() {
   ]
   return projectList.map((item) => (
     <div>
-      <Project item={item} />
+      <Project name={item.name} deploy={item.deploy} repository={item.repository} image={item.image} />
     </div>
   )
   )

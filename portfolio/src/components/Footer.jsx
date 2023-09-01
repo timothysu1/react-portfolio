@@ -1,7 +1,9 @@
 
 export default function Footer() {
-  <footer>
-    <a href=''>Github</a>
-    <a href=''>LinkedIn</a>
-  </footer>
+  return (
+    <footer>
+      <a href='https://github.com/timothysu1' target='_blank'>Github</a>
+      <a href='https://www.linkedin.com/in/timothysu1/' target='_blank'>LinkedIn</a>
+    </footer>
+  )
 };
