@@ -40,8 +40,8 @@ export default function Portfolio() {
     }
   ]
   return projectList.map((item, index) => (
-    <div>
-      <Project key={index} name={item.name} deploy={item.deploy} repository={item.repository} image={item.image} />
+    <div key={index}>
+      <Project name={item.name} deploy={item.deploy} repository={item.repository} image={item.image} />
     </div>
   )
   )

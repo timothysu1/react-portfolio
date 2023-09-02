@@ -13,6 +13,7 @@ export default function Contact() {
       setName('')
       setEmail('')
       setMessage('')
+      setField("Message Sent!")
     } else {
       setField('Please Fill Out All Fields')
     }
@@ -20,26 +21,29 @@ export default function Contact() {
   }
   const validField = (e) => {
     let fieldMessage = ''
-    console.log(e.target)
     if (!e.target.value) {
       if (e.target.id == 'nameInput') {
         fieldMessage = 'Name Required'
       } else if (e.target.id == 'emailInput') {
-        fieldMessage ='Email Required'
+        fieldMessage = 'Email Required'
       } else if (e.target.id == 'messageInput') {
-        fieldMessage ='Message Required'
+        fieldMessage = 'Message Required'
       }
     }
     setField(fieldMessage)
   }
 
   const handleChange = (e) => {
-    if (e.target.id == 'name') {
-      setName(e.target.value)
-    } else if (e.target.id == 'email') {
-      setEmail(e.target.value)
-    } else if (e.target.id == 'message') {
-      setMessage(e.target.value)
+    switch (e.target.id) {
+      case 'nameInput':
+        setName(e.target.value)
+        break;
+      case 'emailInput':
+        setEmail(e.target.value)
+        break;
+      case 'messageInput':
+        setMessage(e.target.value)
+        break;
     }
   }
 
