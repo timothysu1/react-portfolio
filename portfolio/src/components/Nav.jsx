@@ -5,7 +5,7 @@ export default function Nav() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className='nav nav-table'>
+    <ul className='nav nav-tabs nav-table'>
       <li className='nav-item'>
         <Link
           to='/'
@@ -17,7 +17,7 @@ export default function Nav() {
       <li className='nav-item'>
         <Link
           to='/portfolio'
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
         </Link>
@@ -25,7 +25,7 @@ export default function Nav() {
       <li className='nav-item'>
         <Link
           to='/contact'
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
         </Link>
@@ -33,7 +33,7 @@ export default function Nav() {
       <li className='nav-item'>
         <Link
           to='/resume'
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}
         >
           Resume
         </Link>

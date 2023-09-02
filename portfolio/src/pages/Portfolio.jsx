@@ -39,10 +39,14 @@ export default function Portfolio() {
       image: 'jate.png',
     }
   ]
-  return projectList.map((item, index) => (
-    <div key={index}>
-      <Project name={item.name} deploy={item.deploy} repository={item.repository} image={item.image} />
+  return (
+    <div className="d-flex flex-wrap">
+      {projectList.map((item, index) => (
+        <div key={index} className="d-flex flex-wrap col-4 justify-content-center">
+          <Project name={item.name} deploy={item.deploy} repository={item.repository} image={item.image} />
+        </div>
+      )
+      )}
     </div>
-  )
   )
 }

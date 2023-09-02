@@ -49,41 +49,44 @@ export default function Contact() {
 
   return (
     <>
-      <div>
-        <form className="form" onSubmit={handleFormSubmit} onBlur={validField}>
-          <div>
-            <label htmlFor="nameInput">Name:</label>
+      <div className="row justify-content-center" >
+        <form onSubmit={handleFormSubmit} onBlur={validField} className="form col-5">
+          <div className="mb-2">
+            <label htmlFor="nameInput" className="form-label">Name:</label>
             <input value={name}
               name='name'
               type="text"
               id="nameInput"
               onChange={handleChange}
+              className="form-control"
             />
           </div>
-          <div>
-            <label htmlFor="emailInput">Email:</label>
+          <div className="mb-2">
+            <label htmlFor="emailInput" className="form-label">Email:</label>
             <input value={email}
               name='email'
               type="email"
               id="emailInput"
               onChange={handleChange}
+              className="form-control"
             />
           </div>
-          <div>
-            <label htmlFor="messageInput">Message:</label>
+          <div className="mb-2">
+            <label htmlFor="messageInput" className="form-label">Message:</label>
             <textarea value={message}
               name='message'
               type="text"
               id="messageInput"
               onChange={handleChange}
+              className="form-control"
             ></textarea>
           </div>
-          <button type="submit">
+          <button type="submit" className="btn btn-primary my-2">
             Submit
           </button>
           {field && (
-            <div>
-              {field}
+            <div className="mb-2 text-danger">
+              *{field}
             </div>
           )}
         </form>

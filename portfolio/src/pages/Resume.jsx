@@ -1,6 +1,6 @@
 export default function Resume() {
   return (
-    <>
+    <div id="resume">
       <div>
         <h3>Download my <a href='placeholder-resume.pdf' download>Resume</a></h3>
 
@@ -22,6 +22,6 @@ export default function Resume() {
       </ul>
 
 
-    </>
+    </div>
   )
 }
