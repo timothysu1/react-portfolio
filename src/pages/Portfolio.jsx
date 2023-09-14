@@ -33,10 +33,10 @@ export default function Portfolio() {
       image: 'quiz.png',
     },
     {
-      name: 'Text Editor',
-      deploy: 'https://mysterious-spire-07043-db872e238b73.herokuapp.com/',
-      repository: 'https://github.com/timothysu1/text-editor',
-      image: 'jate.png',
+      name: 'Keep Reacting',
+      deploy: 'https://evening-chamber-43103-8afc86137a8c.herokuapp.com/',
+      repository: 'https://github.com/Ailllycxr/keepTalking',
+      image: 'keep-reacting.png',
     }
   ]
   return (
